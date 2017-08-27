@@ -72,7 +72,7 @@ if (isset($_POST['update'])) {
 
       <div class="form-group">
         <label for="text">Topic text</label>
-        <textarea name="text" class="form-control" id="text" rows="3"><?php print(nl2br($topic['text'])); ?></textarea>
+        <textarea name="text" class="form-control" id="text" rows="3"><?php print($topic['text']); ?></textarea>
       </div>
       <input type="hidden" name="id" value="<?php print($id); ?>">
       <button type="submit" name="update" class="btn btn-primary">Submit</button>
