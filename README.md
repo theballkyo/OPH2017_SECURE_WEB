@@ -5,5 +5,5 @@
 1. Build base image
    * ```docker build -t oph2017base -f ./BaseImage/Dockerfile ./BaseImage/```
 2. Run Web image
-   * ``` docker run -d --name oph2017web101 -v ./Web-101/src:/data/public -p 8888:80 oph2017base ```
-   * ``` docker run -d --name oph2017web102 -v ./Web-102/src:/data/public -p 8889:80 oph2017base ```
+   * ``` docker run -d --name oph2017web101 -v $(pwd)/web101/src:/data/public -p 8888:80 oph2017base ```
+   * ``` docker run -d --name oph2017web102 -v $(pwd)/web102/src:/data/public -p 8889:80 oph2017base ```
